@@ -1,0 +1,15 @@
+.whole-footer{
+    height: 700px;
+    background-color: #FBD062;
+    margin-top:400px;
+    background-size: cover;
+}
+.form-area input,textarea{
+    width:80%;
+    padding:10px;
+    font-size:1 rem;
+    text-align: center;
+    border:none;
+    border-radius: 5px;
+    resize: none;
+}

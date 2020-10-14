@@ -3,7 +3,7 @@ import logo from '../../../images/logos/logo.png'
 
 const Navbar = () => {
     return (
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light container">
         <a class="navbar-brand" href="#">
             <img style={{height:'60px'}}src={logo} alt=""/>
         </a>
@@ -11,13 +11,23 @@ const Navbar = () => {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mr-5">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link mr-5" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item active">
+              <a class="nav-link mr-5" href="#">Our Portfolio <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item active">
+              <a class="nav-link mr-5" href="#">Our Team<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link mr-5" href="#">Contact Us <span class="sr-only">(current)</span></a>
+            </li>
+            <li>
+                <button class="btn btn-dark pl-5 pr-5">Login</button>
+            </li>
+           
     
           </ul>
         </div>
