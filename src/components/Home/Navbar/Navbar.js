@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../../images/logos/logo.png'
 
 const Navbar = () => {
@@ -12,8 +13,12 @@ const Navbar = () => {
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link mr-5" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item active">
+              <a class="nav-link mr-5" href="#">
+              <Link style={{textDecoration:'none',color:'black'}}to="/">
+                 Home
+               </Link>
+                <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
               <a class="nav-link mr-5" href="#">Our Portfolio <span class="sr-only">(current)</span></a>
@@ -22,11 +27,24 @@ const Navbar = () => {
               <a class="nav-link mr-5" href="#">Our Team<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link mr-5" href="#">Contact Us <span class="sr-only">(current)</span></a>
+              <a class="nav-link mr-5" href="#contactUs">Contact Us <span class="sr-only">(current)</span></a>
             </li>
-            <li>
-                <button class="btn btn-dark pl-5 pr-5">Login</button>
+            <li class="nav-item active">
+              <a class="nav-link mr-5" href="#">
+              <Link style={{textDecoration:'none',color:'black'}}to="/dashboard">
+               dashboard
+               </Link>
+                <span class="sr-only">(current)</span></a>
             </li>
+
+            <li class="nav-item active">
+              <a class="nav-link mr-5" href="#">
+              <Link className=""to="/login">
+               <button class="btn btn-dark pl-3 pr-3">Login</button>
+               </Link>
+                <span class="sr-only">(current)</span></a>
+            </li>
+           
            
     
           </ul>

@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <footer className="whole-footer">
+        <footer className="whole-footer" id="contactUs">
           <div className="row">
           <div className="col-sm-6">
                 <h1 style={{ paddingTop: '40px' }} className="text-center">Let us handle your project, professionally </h1>

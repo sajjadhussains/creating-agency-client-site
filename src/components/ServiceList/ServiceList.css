@@ -1,0 +1,18 @@
+.carousel-list{
+    padding-top: 20px;
+}
+.first-link{
+    list-style-type:none;
+    list-style:url("../../images/cart.png")
+}
+.second-link{
+    list-style-type: none;
+    list-style: url("../../images/service.png");
+}
+.third-link{
+    list-style-type: none;
+    list-style: url("../../images/review.png");
+}
+span:hover{
+    color:#009444;
+}
